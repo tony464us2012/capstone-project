@@ -1,27 +1,44 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
-const Nav = () => {
+const Nav = ({ device }) => {
   return (
-        <ul>
-          <li>
-            <a href='!#'>Home</a>
-          </li>
-          <li>
-            <a href='!#'>About</a>
-          </li>
-          <li>
-            <a href='!#'>Menu</a>
-          </li>
-          <li>
-            <a href='!#'>Reservations</a>
-          </li>
-          <li>
-            <a href='!#'>Order Online</a>
-          </li>
-          <li>
-            <a href='!#'>Login</a>
-          </li>
-        </ul>
+    <menu className={`navbar-menu ${device}`}>
+    {props.device === "mobile" ? (
+      ""
+    ) : (
+      <Link to="/">
+        {/* <img
+          src={require("../assets/nav-logo.png")}
+          alt="Little Lemon logo"
+          className="nav-image"
+        ></img> */}
+      </Link>
+    )}
+    <Link className="hover-effect" to="/">
+      <h1>Home</h1>
+    </Link>
+    <Link className="hover-effect" to="/about">
+      <h1>About</h1>
+    </Link>
+    {/* <a
+      className="hover-effect"
+      href={require("../assets/menu.webp")}
+      target="_blank"
+      rel="noreferrer"
+    >
+      <h1>Menu</h1>
+    </a> */}
+    <Link className="hover-effect" to="/reservations">
+      <h1>Reservations</h1>
+    </Link>
+    <Link className="hover-effect" to="/order">
+      <h1>Order</h1>
+    </Link>
+    <Link className="hover-effect" to="/login">
+      <h1>Login</h1>
+    </Link>
+  </menu>
   )
 }
 
