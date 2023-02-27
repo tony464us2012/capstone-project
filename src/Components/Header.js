@@ -1,7 +1,7 @@
-import React from 'react'
+import React, {useState} from 'react'
 import Nav from './Nav'
-// import Hamburger from "../assets/hamburger.png";
-// import Close from "../assets/close.png";
+import Hamburger from "../assets/hamburger.png";
+import Close from "../assets/close.png";
 
 const Header = () => {
 
@@ -13,12 +13,12 @@ const Header = () => {
     <header>
       <nav className="burger">
         <img
-          src={require("../assets/nav-logo.png")}
+          src= {require("../assets/nav-logo.png")}
           alt="Little Lemon logo"
           className="nav-image"
         ></img>
 
-        <button className="burger-icon" onClick={handleToggle}>
+        <button type='button' className="burger-icon" onClick={handleToggle}>
           <img src={navbarOpen ? Close : Hamburger} alt="Navigation Bar" />
         </button>
       </nav>

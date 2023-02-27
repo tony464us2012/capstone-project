@@ -15,16 +15,7 @@ const BookingPage = () => {
 
   return (
     <>
-        <header className="reserve-table">
-        <img
-        className="header-reserve"
-            //   src={HeroImage}
-        alt="Little Lemon Ingredients"
-        ></img>
-        <div className="reserve-header-text">
-        <h1>Reserve a table</h1>
-        </div>
-        </header>
+        <h2 className='title'>Reserve a table</h2>
         <ReservationForm availableTimes={availableTimes} updateTimes={dispatch} />
     </>
   )

@@ -1,17 +1,15 @@
 import React from 'react'
+import Image from '../../assets/Food/food2.jpg'
 
 const About = () => {
   return (
-    <header className="reserve-table">
-    {/* <img
-      className="header-reserve"
-      src={HeroImage}
+    <div className="about">
+        <h1>About us</h1>
+    <img
+      src={Image}
       alt="Little Lemon Ingredients"
-    ></img> */}
-    <div className="reserve-header-text">
-      <h1>About us</h1>
-    </div>
-  </header>
+    ></img>
+  </div>
   )
 }
 

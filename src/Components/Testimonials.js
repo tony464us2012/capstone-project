@@ -1,5 +1,4 @@
 import React from 'react'
-import Carousel from './Carousel'
 import Testimonial from './Card/Testimonials'
 
 const Testimonials = () => {
@@ -28,9 +27,6 @@ const Testimonials = () => {
                 long night of studying. I would definitely order from here again!"/>
             </section>
 
-            <section className="testimonials-carousel">
-                <Carousel />
-            </section>
         </section>
   )
 }

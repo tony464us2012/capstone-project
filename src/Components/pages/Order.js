@@ -1,18 +1,15 @@
 import React from 'react'
-// import HeroImage from "../../../assets/food/food4.webp";
+import Image from "../../assets/Food/food3.jpg";
 
 const Order = () => {
   return (
-    <header className="reserve-table">
-    {/* <img
-      className="header-reserve"
-      src={HeroImage}
-      alt="Little Lemon Ingredients"
-    ></img> */}
-    <div className="reserve-header-text">
+    <div className='order'>
       <h1>Order Online</h1>
-    </div>
-  </header>
+      <img
+        src={Image}
+        alt="Little Lemon Ingredients"
+      ></img>
+  </div>
   )
 }
 
