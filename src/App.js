@@ -8,11 +8,12 @@ import Confirmation from './Components/pages/Confirmation'
 import Footer from './Components/Footer'
 import { Routes, Route } from 'react-router-dom'
 import BookingPage from './Components/pages/BookingPage'
+import { ChakraProvider } from "@chakra-ui/react";
 
 
 function App() {
   return (
-    <>
+    <ChakraProvider>
         <div id='body'>
           <Header />
           <Routes>
@@ -25,7 +26,7 @@ function App() {
           </Routes>
         </div>
       <Footer />
-    </>
+    </ChakraProvider>
   );
 }
 

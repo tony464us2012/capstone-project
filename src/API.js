@@ -13,7 +13,7 @@ export function fetchAPI(date) {
   let seed = dt.getDate();
 
   let random = seededRandom(seed);
-  for (let i = 4; i <= 10; i++) {
+  for (let i = 17; i <= 23; i++) {
     if (random() < 0.5) {
       result.push(i + ":00");
     }
